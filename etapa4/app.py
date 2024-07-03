@@ -23,6 +23,7 @@ CORS(app)  # Esto habilitará CORS para todas las rutas
 class Catalogo:
     #----------------------------------------------------------------
     # Constructor de la clase
+  
     def __init__(self, host, user, password, database):
         self.conn = mysql.connector.connect(
             host=host,
@@ -106,7 +107,7 @@ class Catalogo:
 # Cuerpo del programa
 #--------------------------------------------------------------------
 # Crear una instancia de la clase Catalogo
-catalogo = Catalogo(host='localhost', user='root', password='', database='miapp')
+catalogo = Catalogo(host='localhost', user='diego', password='diego123', database='ejemplo')
 # catalogo = Catalogo(host="localhost", user="root", password="", database="miapp")
 #catalogo = Catalogo(host='juanpablocodo.mysql.pythonanywhere-services.com', user='juanpablocodo', password='root-123456', database='juanpablocodo$miapp')
 
