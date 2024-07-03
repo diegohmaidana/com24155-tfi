@@ -112,7 +112,8 @@ catalogo = Catalogo(host='diegohmaidana.mysql.pythonanywhere-services.com', user
 
 # Carpeta para guardar las imagenes
 #ruta_destino = './static/imagenes/'
-ruta_destino = '/home/florcodo1/static/imagenes/'   #recordar poner / después de imágenes
+#ruta_destino = '/home/florcodo1/static/imagenes/'   #recordar poner / después de imágenes
+ruta_destino = '/home/diegohmaidana/g13tif/static/imagenes/'   #recordar poner / después de imágenes
 
 @app.route("/productos", methods=["GET"])  #GET nos trae los productos
 def listar_productos():
