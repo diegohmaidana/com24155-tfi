@@ -41,7 +41,7 @@
     </div>
     <script>
        // const URL = "http://127.0.0.1:5000/"
-        const URL = "https://diegohmaidana.pythonanywhere.com/"
+        const URL = "https://FlorCodo.pythonanywhere.com/"
 
 
         // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
@@ -49,7 +49,7 @@
         
 
         // Realizamos la solicitud GET al servidor para obtener todos los productos.
-        fetch(URL,  { method: 'get', mode: 'cors' } + 'productos')
+        fetch(URL + 'productos')
             .then(function (response) {
                 if (response.ok) {
                     //Si la respuesta es exitosa (response.ok), convierte el cuerpo de la respuesta de formato JSON a un objeto JavaScript y pasa estos datos a la siguiente promesa then.
@@ -73,7 +73,7 @@
                         '<td align="right">' + producto.precio + '</td>' +
                         // Mostrar miniatura de la imagen
                         // '<td><img src=./static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>';
-                        '<td><img src=https://www.pythonanywhere.com/user/diegohmaidana/files/home/diegohmaidana/g13tif/static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>';
+                        '<td><img src=https://www.pythonanywhere.com/user/FlorCodo/files/home/FlorCodo/mysite/static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>';
                         
                         //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
                         //'<td><img src=https://www.pythonanywhere.com/user/USUARIO/files/home/USUARIO/mysite/static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>';
